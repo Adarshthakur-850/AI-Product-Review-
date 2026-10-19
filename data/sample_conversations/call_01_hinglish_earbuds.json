@@ -1,0 +1,46 @@
+{
+  "call_id": "call-hinglish-001",
+  "product_id": "quantum-sound-pro",
+  "provider_name": "Rohan Sharma",
+  "customer_name": "Amit Patel",
+  "duration_seconds": 95.0,
+  "disclosure_confirmed": true,
+  "segments": [
+    {
+      "speaker_role": "customer",
+      "start_time": 0.0,
+      "end_time": 4.0,
+      "text": "Hello, is Quantum Sound Pro headphone ki battery kitni der chalti hai?"
+    },
+    {
+      "speaker_role": "provider",
+      "start_time": 4.5,
+      "end_time": 18.0,
+      "text": "Sir, iska battery backup around 30 hours hai with ANC off, aur waise mere friend ne bhi ye liya tha jab hum Goa trip par gaye the last month. Humne bohot enjoy kiya tha."
+    },
+    {
+      "speaker_role": "customer",
+      "start_time": 19.0,
+      "end_time": 24.0,
+      "text": "Achha, aur kya main ise swimming pool me swim karte waqt use kar sakta hu? Is it 100% waterproof?"
+    },
+    {
+      "speaker_role": "provider",
+      "start_time": 25.0,
+      "end_time": 33.0,
+      "text": "Haan sir, bilkul! Ye 100% waterproof hai, aap swimming pool me aaram se use kar sakte ho koi problem nahi hogi."
+    },
+    {
+      "speaker_role": "customer",
+      "start_time": 34.0,
+      "end_time": 37.0,
+      "text": "Theek hai, aur iska final discount price kitna padega?"
+    },
+    {
+      "speaker_role": "provider",
+      "start_time": 38.0,
+      "end_time": 45.0,
+      "text": "Sir iska MRP 7,999 hai, lekin abhi offer me ye flat INR 5,999 me mil jayega."
+    }
+  ]
+}

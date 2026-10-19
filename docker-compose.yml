@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  productguard-api:
+    build: .
+    container_name: productguard-api
+    command: python run.py api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:////app/productguard.db
+    volumes:
+      - .:/app
+    restart: unless-stopped
+
+  productguard-dashboard:
+    build: .
+    container_name: productguard-dashboard
+    command: python run.py dashboard
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://productguard-api:8000
+    volumes:
+      - .:/app
+    depends_on:
+      - productguard-api
+    restart: unless-stopped

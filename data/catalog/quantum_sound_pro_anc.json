@@ -1,0 +1,43 @@
+{
+  "id": "quantum-sound-pro",
+  "name": "Quantum Sound Pro ANC Wireless Headphones",
+  "category": "Audio & Headphones",
+  "brand": "QuantumTech",
+  "version": "1.0",
+  "approved_date": "2026-01-15",
+  "specifications": {
+    "battery_life": "Up to 30 hours of playtime with ANC OFF, 24 hours with ANC ON",
+    "charging": "USB-C fast charging: 10 minutes gives 4 hours of playback. Full charge takes 90 minutes",
+    "noise_cancellation": "Hybrid Active Noise Cancellation up to 40dB with Transparency Mode",
+    "drivers": "40mm custom bio-cellulose dynamic drivers with deep bass tuning",
+    "connectivity": "Bluetooth 5.3 with dual-device multipoint pairing support",
+    "water_resistance": "IPX4 splash and sweat resistant (not suitable for swimming or heavy rain)",
+    "microphone": "Quad-mic array with AI environmental noise reduction for calls",
+    "weight": "245 grams lightweight ergonomic over-ear design"
+  },
+  "commercial_terms": {
+    "mrp": "INR 7,999",
+    "discounted_price": "INR 5,999",
+    "discount_percentage": "25% instant discount during introductory launch",
+    "emi_available": "No-cost EMI available on major credit cards starting at INR 999/month"
+  },
+  "policies": {
+    "warranty": "1-Year comprehensive manufacturer replacement warranty against functional defects",
+    "returns": "7-day replacement policy for manufacturing defects. Non-returnable once opened unless defective",
+    "box_contents": "Headphones, USB-C charging cable, 3.5mm audio aux cable, carrying pouch, quick start guide"
+  },
+  "frequently_asked_questions": [
+    {
+      "question": "Can I connect two devices at the same time?",
+      "answer": "Yes, Quantum Sound Pro supports Dual Multipoint Bluetooth pairing allowing seamless switching between laptop and smartphone."
+    },
+    {
+      "question": "Is the charger included?",
+      "answer": "A USB-C charging cable is included in the box; a wall adapter is not included."
+    },
+    {
+      "question": "Is it waterproof for swimming?",
+      "answer": "No, it is IPX4 splash resistant for workouts and light rain only. It cannot be submerged."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "apex-phone-15",
+  "name": "Apex Smartphone 15 Pro",
+  "category": "Smartphones",
+  "brand": "Apex Mobile",
+  "version": "1.0",
+  "approved_date": "2026-02-01",
+  "specifications": {
+    "display": "6.7-inch Quad-HD+ Super AMOLED, 120Hz adaptive refresh rate, 2000 nits peak brightness",
+    "processor": "Octa-core Snapdragon 8 Gen 3 (4nm flagship processor)",
+    "ram_storage": "12GB LPDDR5X RAM with 256GB / 512GB UFS 4.0 storage. No microSD card slot",
+    "battery": "5000 mAh dual-cell high-density battery",
+    "charging": "67W Turbo Wired Flash Charge (67W adapter included in the box). Wireless charging is NOT supported",
+    "rear_camera": "Triple setup: 50MP Sony IMX890 Main (OIS), 12MP Ultra-wide, 10MP 3x Optical Telephoto (up to 30x digital zoom)",
+    "front_camera": "32MP high-resolution HDR selfie camera",
+    "build": "Aviation-grade aluminum frame with Gorilla Glass Victus 2 front and back. IP68 dust and water resistance"
+  },
+  "commercial_terms": {
+    "mrp": "INR 54,999",
+    "discounted_price": "INR 49,999 (Flat INR 5,000 instant bank discount)",
+    "exchange_bonus": "Up to INR 3,000 extra exchange value on eligible older smartphones"
+  },
+  "policies": {
+    "warranty": "1-Year comprehensive brand warranty + Complimentary 6-month one-time screen replacement protection",
+    "returns": "10-day replacement window for hardware dead-on-arrival issues"
+  },
+  "frequently_asked_questions": [
+    {
+      "question": "Does it support wireless charging?",
+      "answer": "No, Apex 15 Pro does not support wireless charging. It features 67W wired fast charging."
+    },
+    {
+      "question": "Is the fast charger provided in the box?",
+      "answer": "Yes, a 67W fast charging adapter and 6A USB-C cable are bundled inside the retail box."
+    },
+    {
+      "question": "Can I expand storage with a memory card?",
+      "answer": "No, there is no microSD card slot. Internal storage options are 256GB and 512GB."
+    }
+  ]
+}

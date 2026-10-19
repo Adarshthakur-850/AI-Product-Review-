@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1691.7882499999996 2832.9590000000003" width="1691.7882499999996" height="2832.9590000000003" style="--bg:#1F1F1F;--fg:#CCCCCC;--line:#CCCCCC;--accent:#0078D4;--muted:#CCCCCCCC;--surface:#181818;--border:#CCCCCC;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="S1" data-label="Stage 1: Multi-Modal Ingestion &amp; Preprocessing">
+  <rect x="699.3073857142854" y="40" width="550.30125" height="521" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="699.3073857142854" y="40" width="550.30125" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="711.3073857142854" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Stage 1: Multi-Modal Ingestion &amp; Preprocessing</text>
+</g>
+<g class="subgraph" data-id="S2" data-label="Stage 2: Utterance-Level Language Identification">
+  <rect x="664.1098857142856" y="621" width="781.4559999999998" height="215.60000000000002" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="664.1098857142856" y="621" width="781.4559999999998" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="676.1098857142856" y="635" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Stage 2: Utterance-Level Language Identification</text>
+</g>
+<g class="subgraph" data-id="S3" data-label="Stage 3: Approved Knowledge Base (RAG)">
+  <rect x="171.67088571428556" y="519.2" width="287.35799999999995" height="317.40000000000003" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="171.67088571428556" y="519.2" width="287.35799999999995" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="183.67088571428556" y="533.2" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Stage 3: Approved Knowledge Base (RAG)</text>
+</g>
+<g class="subgraph" data-id="S4" data-label="Stage 4: Factual Claim Extraction &amp; Verification">
+  <rect x="193.87113571428557" y="896.6" width="888.1249999999999" height="646.059" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="193.87113571428557" y="896.6" width="888.1249999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="205.87113571428557" y="910.6" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Stage 4: Factual Claim Extraction &amp; Verification</text>
+</g>
+<g class="subgraph" data-id="S5" data-label="Stage 5: Conversational Relevance Classification">
+  <rect x="314.4352499999998" y="1670.9589999999998" width="1337.3529999999998" height="215.60000000000002" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="314.4352499999998" y="1670.9589999999998" width="1337.3529999999998" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="326.4352499999998" y="1684.9589999999998" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Stage 5: Conversational Relevance Classification</text>
+</g>
+<g class="subgraph" data-id="S6" data-label="Stage 6: 100-Point Transparent Quality Rubric">
+  <rect x="409.428738095238" y="1958.5590000000002" width="472.6079999999997" height="283.20000000000005" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="409.428738095238" y="1958.5590000000002" width="472.6079999999997" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="421.428738095238" y="1972.5590000000002" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Stage 6: 100-Point Transparent Quality Rubric</text>
+</g>
+<g class="subgraph" data-id="S7" data-label="Stage 7: Multilingual Coaching &amp; Response Rewriting">
+  <rect x="171.69000000000005" y="2301.759" width="629.9369999999998" height="317.40000000000003" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="171.69000000000005" y="2301.759" width="629.9369999999998" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="183.69000000000005" y="2315.759" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Stage 7: Multilingual Coaching &amp; Response Rewriting</text>
+</g>
+<g class="subgraph" data-id="S8" data-label="Stage 8: Delivery &amp; Interaction Interfaces">
+  <rect x="40" y="2679.159" width="724.3989999999999" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="2679.159" width="724.3989999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="2693.159" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Stage 8: Delivery &amp; Interaction Interfaces</text>
+</g>
+<polyline class="edge" data-from="D1" data-to="E1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1017.7878857142853,545 1017.7878857142855,665" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L1" data-to="TurnCheck" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="785.1883857142856,820.5999999999999 785.1883857142856,880.5999999999999 829.2781357142856,880.5999999999999 829.2781357142856,940.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L2" data-to="TurnCheck" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1017.7878857142855,820.5999999999999 1017.7878857142855,880.5999999999999 829.2781357142856,880.5999999999999 829.2781357142856,940.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="L3" data-to="TurnCheck" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1287.4373857142855,820.5999999999999 1287.4373857142855,880.5999999999999 829.2781357142856,880.5999999999999 829.2781357142856,940.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Truth" data-to="Verifier" data-style="dotted" data-arrow-start="false" data-arrow-end="true" points="315.34988571428556,820.6 315.34988571428556,884.6 520.1321357142856,884.6 520.1321357142856,1335.059" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="TurnCheck" data-to="RelClass" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Yes" points="829.2781357142856,1116.959 829.2781357142856,1584.659 963.7429499999998,1584.659 963.7429499999998,1714.9589999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CustQ" data-to="RelClass" data-style="dotted" data-arrow-start="false" data-arrow-end="true" points="953.1371357142855,1287.059 953.1371357142855,1572.659 1050.3931499999999,1572.659 1050.3931499999999,1652.9589999999998 1013.1843499999998,1652.9589999999998 1013.1843499999998,1714.9589999999998" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="V2" data-to="RelClass" data-style="dotted" data-arrow-start="false" data-arrow-end="true" points="554.5408023809521,1490.659 554.5408023809521,1514.659 635.9361357142855,1514.659 635.9361357142855,1652.9589999999998 637.4361357142855,1652.9589999999998 637.4361357142855,1652.9589999999998 864.8601499999997,1652.9589999999998 864.8601499999997,1714.9589999999998" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="V3" data-to="RelClass" data-style="dotted" data-arrow-start="false" data-arrow-end="true" points="763.3048023809522,1490.659 763.3048023809522,1640.9589999999998 906.0355833333331,1640.9589999999998 906.0355833333331,1652.9589999999998 914.3015499999999,1652.9589999999998 914.3015499999999,1714.9589999999998" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="V1" data-to="Scorer" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="299.38863571428556,1490.6589999999999 299.38863571428556,1938.6715 645.7327380952378,1938.6715 645.7327380952378,2002.5590000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="V2" data-to="Scorer" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="520.1321357142855,1490.6589999999999 520.1321357142855,1938.6715 645.7327380952378,1938.6715 645.7327380952378,2002.5590000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="V3" data-to="Scorer" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="735.3181357142855,1490.6589999999999 735.3181357142855,1938.6715 645.7327380952378,1938.6715 645.7327380952378,2002.5590000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CatOffTopic" data-to="Scorer" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1290.7002499999996,1874.7839999999999 1290.7002499999996,1938.6715 645.7327380952378,1938.6715 645.7327380952378,2002.5590000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CatRep" data-to="Scorer" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1538.4902499999996,1857.884 1538.4902499999996,1938.6715 645.7327380952378,1938.6715 645.7327380952378,2002.5590000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CatDirect" data-to="Scorer" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="623.2827499999999,1857.884 623.2827499999999,1938.6715 645.7327380952378,1938.6715 645.7327380952378,2002.5590000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Rubric" data-to="CoachGen" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="645.7327380952378,2225.759 645.7327380952378,2283.7590000000005 377.6971666666666,2283.7590000000005 377.6971666666666,2345.759" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Truth" data-to="CoachGen" data-style="dotted" data-arrow-start="false" data-arrow-end="true" points="315.34988571428556,820.6 315.34988571428556,884.6 339.70699999999994,884.6 339.70699999999994,2345.759" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Report" data-to="UI1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="339.707,2501.3590000000004 339.707,2612.259 645.1729999999999,2612.259 645.1729999999999,2723.159" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Rewrite" data-to="UI1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="629.7339999999999,2501.3590000000004 629.7339999999999,2525.3590000000004 645.1729999999999,2525.3590000000004 645.1729999999999,2723.159" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="TTS" data-to="UI1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="685.3649999999999,2603.159 685.3649999999998,2661.159 696.7859999999998,2661.159 696.7859999999998,2723.159" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Report" data-to="API" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="339.707,2501.3590000000004 339.707,2612.259 419.2424999999999,2612.259 419.2424999999999,2723.159" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CoachGen" data-to="Docx" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="339.70699999999994,2399.559 339.70699999999994,2423.559 176.26899999999998,2423.559 176.26899999999998,2723.159" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A1" data-to="B1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1003.3383857142853,137.8 1003.3383857142853,161.8 899.6356357142854,161.8 899.6356357142854,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A2" data-to="B1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="795.9328857142854,137.8 795.9328857142854,161.8 899.6356357142854,161.8 899.6356357142854,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A3" data-to="C1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1135.9401357142854,332.95000000000005 1135.9401357142854,369.625 1017.7878857142854,369.625 1017.7878857142854,389.40000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B1" data-to="STT" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="899.6356357142854,239.60000000000002 899.6356357142854,296.05" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="STT" data-to="C1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="899.6356357142854,349.85 899.6356357142854,369.625 1017.7878857142854,369.625 1017.7878857142854,389.40000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C1" data-to="D1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1017.7878857142854,443.20000000000005 1017.7878857142854,491.20000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E1" data-to="L1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1017.7878857142856,718.8 1017.7878857142856,742.8 785.1883857142856,742.8 785.1883857142856,766.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E1" data-to="L2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1017.7878857142856,718.8 1017.7878857142856,742.8 1017.7878857142855,742.8 1017.7878857142855,766.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E1" data-to="L3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1017.7878857142856,718.8 1017.7878857142856,742.8 1287.4373857142855,742.8 1287.4373857142855,766.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Cat" data-to="RAG" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="315.3498857142855,617 315.3498857142855,665" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RAG" data-to="Truth" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="315.3498857142855,718.8000000000001 315.3498857142855,766.8000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="TurnCheck" data-to="Extractor" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Yes" points="785.1883857142855,1072.86925 785.1883857142855,1128.959 592.4356357142856,1128.959 592.4356357142856,1233.259" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="TurnCheck" data-to="CustQ" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="No" points="873.3678857142856,1072.86925 873.3678857142856,1128.959 953.1371357142855,1128.959 953.1371357142855,1233.259" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Extractor" data-to="Verifier" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="592.4356357142856,1287.059 592.4356357142856,1299.059 554.1703023809521,1299.059 554.1703023809521,1335.059" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Verifier" data-to="V1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="520.1321357142856,1388.859 520.1321357142856,1412.859 299.38863571428556,1412.859 299.38863571428556,1436.859" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Verifier" data-to="V2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="520.1321357142856,1388.859 520.1321357142856,1412.859 520.1321357142855,1412.859 520.1321357142855,1436.859" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Verifier" data-to="V3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="520.1321357142856,1388.859 520.1321357142856,1412.859 735.3181357142855,1412.859 735.3181357142855,1436.859" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RelClass" data-to="CatDirect" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="939.0222499999998,1768.7589999999998 939.0222499999998,1794.8714999999997 623.2827499999999,1794.8714999999997 623.2827499999999,1820.984" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RelClass" data-to="CatFeat" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="939.0222499999998,1768.7589999999998 939.0222499999998,1794.8714999999997 1043.65125,1794.8714999999997 1043.65125,1820.984" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RelClass" data-to="CatPrice" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="939.0222499999998,1768.7589999999998 939.0222499999998,1794.8714999999997 834.3932499999999,1794.8714999999997 834.3932499999999,1820.984" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RelClass" data-to="CatGreet" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="939.0222499999998,1768.7589999999998 939.0222499999998,1794.8714999999997 413.6542499999998,1794.8714999999997 413.6542499999998,1820.984" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RelClass" data-to="CatOffTopic" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="939.0222499999998,1768.7589999999998 939.0222499999998,1794.8714999999997 1290.7002499999996,1794.8714999999997 1290.7002499999996,1820.984" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RelClass" data-to="CatRep" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="939.0222499999998,1768.7589999999998 939.0222499999998,1794.8714999999997 1538.4902499999996,1794.8714999999997 1538.4902499999996,1820.984" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Scorer" data-to="Rubric" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="645.7327380952379,2056.3590000000004 645.7327380952379,2104.3590000000004" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CoachGen" data-to="Rewrite" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="339.70699999999994,2399.559 339.70699999999994,2423.559 629.7339999999999,2423.559 629.7339999999999,2447.559" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CoachGen" data-to="Report" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="339.70699999999994,2399.559 339.70699999999994,2423.559 339.707,2423.559 339.707,2447.559" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Rewrite" data-to="TTS" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="629.7339999999999,2501.3590000000004 629.7339999999999,2525.3590000000004 685.3649999999998,2525.3590000000004 685.3649999999998,2549.359" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="TurnCheck" data-to="RelClass" data-label="Yes">
+  <rect x="945.2429499999998" y="1591.659" width="36.658" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="963.5719499999998" y="1606.8090000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Yes</text>
+</g>
+<g class="edge-label" data-from="TurnCheck" data-to="Extractor" data-label="Yes">
+  <rect x="573.9356357142856" y="1159.9589999999998" width="36.658" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="592.2646357142855" y="1175.109" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Yes</text>
+</g>
+<g class="edge-label" data-from="TurnCheck" data-to="CustQ" data-label="No">
+  <rect x="937.6371357142856" y="1159.9589999999998" width="30.718000000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="952.9961357142856" y="1175.109" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">No</text>
+</g>
+<g class="node" data-id="A1" data-label="🎙️ Live Microphone Input
+(st.audio_input)" data-shape="rectangle">
+  <rect x="904.5583857142854" y="84" width="197.55999999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1003.3383857142853" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1003.3383857142853" dy="-3.9000000000000012">🎙️ Live Microphone Input</tspan><tspan x="1003.3383857142853" dy="16.900000000000002">(st.audio_input)</tspan></text>
+</g>
+<g class="node" data-id="B1" data-label="Audio Normalization
+(16-bit PCM WAV via soundfile)" data-shape="rectangle">
+  <rect x="792.3341357142854" y="185.8" width="214.60299999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="899.6356357142854" y="212.70000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="899.6356357142854" dy="-3.9000000000000012">Audio Normalization</tspan><tspan x="899.6356357142854" dy="16.900000000000002">(16-bit PCM WAV via soundfile)</tspan></text>
+</g>
+<g class="node" data-id="A2" data-label="📁 Audio File Upload
+(.wav, .mp3, .m4a)" data-shape="rectangle">
+  <rect x="715.3073857142854" y="84" width="161.251" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="795.9328857142854" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="795.9328857142854" dy="-3.9000000000000012">📁 Audio File Upload</tspan><tspan x="795.9328857142854" dy="16.900000000000002">(.wav, .mp3, .m4a)</tspan></text>
+</g>
+<g class="node" data-id="A3" data-label="📝 Transcript Text / JSON" data-shape="rectangle">
+  <rect x="1038.2716357142854" y="296.05" width="195.337" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1135.9401357142854" y="314.5" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">📝 Transcript Text / JSON</text>
+</g>
+<g class="node" data-id="C1" data-label="PII Redaction Engine
+(Emails, Phone, Cards redacted)" data-shape="rectangle">
+  <rect x="903.0763857142854" y="389.40000000000003" width="229.423" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1017.7878857142854" y="416.3" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1017.7878857142854" dy="-3.9000000000000012">PII Redaction Engine</tspan><tspan x="1017.7878857142854" dy="16.900000000000002">(Emails, Phone, Cards redacted)</tspan></text>
+</g>
+<g class="node" data-id="STT" data-label="Speech-to-Text Transcription
+(Google STT / Whisper Engine)" data-shape="rectangle">
+  <rect x="788.9996357142854" y="296.05" width="221.27199999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="899.6356357142854" y="322.95" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="899.6356357142854" dy="-3.9000000000000012">Speech-to-Text Transcription</tspan><tspan x="899.6356357142854" dy="16.900000000000002">(Google STT / Whisper Engine)</tspan></text>
+</g>
+<g class="node" data-id="D1" data-label="Speaker Role Diarization
+(Customer vs Service Provider)" data-shape="rectangle">
+  <rect x="903.8173857142854" y="491.20000000000005" width="227.94099999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1017.7878857142854" y="518.1" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1017.7878857142854" dy="-3.9000000000000012">Speaker Role Diarization</tspan><tspan x="1017.7878857142854" dy="16.900000000000002">(Customer vs Service Provider)</tspan></text>
+</g>
+<g class="node" data-id="E1" data-label="Language &amp; Script Analyzer
+(services/language_detector.py)" data-shape="rectangle">
+  <rect x="900.1123857142857" y="665" width="235.35099999999994" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1017.7878857142856" y="691.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1017.7878857142856" dy="-3.9000000000000012">Language &amp; Script Analyzer</tspan><tspan x="1017.7878857142856" dy="16.900000000000002">(services/language_detector.py)</tspan></text>
+</g>
+<g class="node" data-id="L1" data-label="English ('en')
+Latin Script, English Lexicon" data-shape="rectangle">
+  <rect x="680.1098857142856" y="766.8" width="210.15699999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="785.1883857142856" y="793.6999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="785.1883857142856" dy="-3.9000000000000012">English (&#39;en&#39;)</tspan><tspan x="785.1883857142856" dy="16.900000000000002">Latin Script, English Lexicon</tspan></text>
+</g>
+<g class="node" data-id="L2" data-label="Hindi ('hi')
+Devanagari Unicode Block" data-shape="rectangle">
+  <rect x="918.2668857142855" y="766.8" width="199.04199999999994" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1017.7878857142855" y="793.6999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1017.7878857142855" dy="-3.9000000000000012">Hindi (&#39;hi&#39;)</tspan><tspan x="1017.7878857142855" dy="16.900000000000002">Devanagari Unicode Block</tspan></text>
+</g>
+<g class="node" data-id="L3" data-label="Hinglish ('hi-Latn')
+Code-switched Romanized Hindi + English" data-shape="rectangle">
+  <rect x="1145.3088857142855" y="766.8" width="284.2569999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1287.4373857142855" y="793.6999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1287.4373857142855" dy="-3.9000000000000012">Hinglish (&#39;hi-Latn&#39;)</tspan><tspan x="1287.4373857142855" dy="16.900000000000002">Code-switched Romanized Hindi + English</tspan></text>
+</g>
+<g class="node" data-id="Cat" data-label="Approved Catalog Sheets
+(data/catalog/*.json)" data-shape="rectangle">
+  <rect x="219.5338857142856" y="563.2" width="191.63199999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="315.34988571428556" y="590.1" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="315.34988571428556" dy="-3.9000000000000012">Approved Catalog Sheets</tspan><tspan x="315.34988571428556" dy="16.900000000000002">(data/catalog/*.json)</tspan></text>
+</g>
+<g class="node" data-id="RAG" data-label="Hybrid Retriever
+(Lexical Overlap + Semantic Search)" data-shape="rectangle">
+  <rect x="187.67088571428556" y="665" width="255.35799999999998" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="315.34988571428556" y="691.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="315.34988571428556" dy="-3.9000000000000012">Hybrid Retriever</tspan><tspan x="315.34988571428556" dy="16.900000000000002">(Lexical Overlap + Semantic Search)</tspan></text>
+</g>
+<g class="node" data-id="Truth" data-label="Grounded Product Truth
+(Specs, Pricing, Policies, FAQs)" data-shape="rectangle">
+  <rect x="201.37938571428558" y="766.8000000000001" width="227.94099999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="315.34988571428556" y="793.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="315.34988571428556" dy="-3.9000000000000012">Grounded Product Truth</tspan><tspan x="315.34988571428556" dy="16.900000000000002">(Specs, Pricing, Policies, FAQs)</tspan></text>
+</g>
+<g class="node" data-id="TurnCheck" data-label="Is Speaker
+Service Provider?" data-shape="diamond">
+  <polygon points="829.2781357142856,940.6000000000001 917.4576357142855,1028.7795 829.2781357142856,1116.959 741.0986357142856,1028.7795" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="829.2781357142856" y="1028.7795" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="829.2781357142856" dy="-3.9000000000000012">Is Speaker</tspan><tspan x="829.2781357142856" dy="16.900000000000002">Service Provider?</tspan></text>
+</g>
+<g class="node" data-id="Extractor" data-label="Claim Extraction Engine
+(Battery, Charging, Camera, Price, IPX)" data-shape="rectangle">
+  <rect x="458.82863571428555" y="1233.259" width="267.21399999999994" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="592.4356357142856" y="1260.159" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="592.4356357142856" dy="-3.9000000000000012">Claim Extraction Engine</tspan><tspan x="592.4356357142856" dy="16.900000000000002">(Battery, Charging, Camera, Price, IPX)</tspan></text>
+</g>
+<g class="node" data-id="CustQ" data-label="Customer Intent Tracker
+(Questions, Queries, Concerns)" data-shape="rectangle">
+  <rect x="840.2781357142856" y="1233.259" width="225.718" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="953.1371357142856" y="1260.159" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="953.1371357142856" dy="-3.9000000000000012">Customer Intent Tracker</tspan><tspan x="953.1371357142856" dy="16.900000000000002">(Questions, Queries, Concerns)</tspan></text>
+</g>
+<g class="node" data-id="Verifier" data-label="Claim Verifier vs Truth
+(services/claim_verifier.py)" data-shape="rectangle">
+  <rect x="418.0176357142856" y="1335.059" width="204.22899999999993" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="520.1321357142856" y="1361.959" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="520.1321357142856" dy="-3.9000000000000012">Claim Verifier vs Truth</tspan><tspan x="520.1321357142856" dy="16.900000000000002">(services/claim_verifier.py)</tspan></text>
+</g>
+<g class="node" data-id="V1" data-label="✅ VERIFIED
+(Matches official specs)" data-shape="rectangle">
+  <rect x="209.87113571428557" y="1436.859" width="179.03499999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="299.38863571428556" y="1463.759" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="299.38863571428556" dy="-3.9000000000000012">✅ VERIFIED</tspan><tspan x="299.38863571428556" dy="16.900000000000002">(Matches official specs)</tspan></text>
+</g>
+<g class="node" data-id="V2" data-label="❌ CONTRADICTED
+(Contradicts approved truth)" data-shape="rectangle">
+  <rect x="416.9061357142855" y="1436.859" width="206.452" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="520.1321357142855" y="1463.759" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="520.1321357142855" dy="-3.9000000000000012">❌ CONTRADICTED</tspan><tspan x="520.1321357142855" dy="16.900000000000002">(Contradicts approved truth)</tspan></text>
+</g>
+<g class="node" data-id="V3" data-label="⚠️ UNSUPPORTED
+(Unverified in catalog)" data-shape="rectangle">
+  <rect x="651.3581357142855" y="1436.859" width="167.92000000000002" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="735.3181357142855" y="1463.759" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="735.3181357142855" dy="-3.9000000000000012">⚠️ UNSUPPORTED</tspan><tspan x="735.3181357142855" dy="16.900000000000002">(Unverified in catalog)</tspan></text>
+</g>
+<g class="node" data-id="RelClass" data-label="10-Class Relevance Classifier
+(services/relevance_classifier.py)" data-shape="rectangle">
+  <rect x="815.4187499999998" y="1714.9589999999998" width="247.2069999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="939.0222499999998" y="1741.859" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="939.0222499999998" dy="-3.9000000000000012">10-Class Relevance Classifier</tspan><tspan x="939.0222499999998" dy="16.900000000000002">(services/relevance_classifier.py)</tspan></text>
+</g>
+<g class="node" data-id="CatDirect" data-label="Direct Answer to Customer" data-shape="rectangle">
+  <rect x="524.8732499999999" y="1820.984" width="196.81899999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="623.2827499999999" y="1839.434" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Direct Answer to Customer</text>
+</g>
+<g class="node" data-id="CatFeat" data-label="Relevant Product Feature" data-shape="rectangle">
+  <rect x="947.0942499999999" y="1820.984" width="193.114" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1043.65125" y="1839.434" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Relevant Product Feature</text>
+</g>
+<g class="node" data-id="CatPrice" data-label="Price / Availability Info" data-shape="rectangle">
+  <rect x="749.6922499999998" y="1820.984" width="169.402" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="834.3932499999999" y="1839.434" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Price / Availability Info</text>
+</g>
+<g class="node" data-id="CatGreet" data-label="Polite Social Greeting" data-shape="rectangle">
+  <rect x="330.4352499999998" y="1820.984" width="166.43800000000005" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="413.6542499999998" y="1839.434" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Polite Social Greeting</text>
+</g>
+<g class="node" data-id="CatOffTopic" data-label="⚠️ Off-Topic Personal Discussion
+(e.g. Goa trip with friend)" data-shape="rectangle">
+  <rect x="1168.2082499999997" y="1820.984" width="244.98399999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1290.7002499999996" y="1847.884" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1290.7002499999996" dy="-3.9000000000000012">⚠️ Off-Topic Personal Discussion</tspan><tspan x="1290.7002499999996" dy="16.900000000000002">(e.g. Goa trip with friend)</tspan></text>
+</g>
+<g class="node" data-id="CatRep" data-label="⚠️ Repetitive Elaboration" data-shape="rectangle">
+  <rect x="1441.1922499999996" y="1820.984" width="194.59599999999995" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1538.4902499999996" y="1839.434" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">⚠️ Repetitive Elaboration</text>
+</g>
+<g class="node" data-id="Scorer" data-label="Quality Evaluator
+(services/quality_scorer.py)" data-shape="rectangle">
+  <rect x="539.9132380952378" y="2002.5590000000002" width="211.63899999999998" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="645.7327380952378" y="2029.4590000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="645.7327380952378" dy="-3.9000000000000012">Quality Evaluator</tspan><tspan x="645.7327380952378" dy="16.900000000000002">(services/quality_scorer.py)</tspan></text>
+</g>
+<g class="node" data-id="Rubric" data-label="100-Point Framework Breakdown:
+• Factual Accuracy: 30 pts (-10 per contradiction, -5 per unsupported)
+• Product Relevance: 25 pts (-6 per off-topic story)
+• Answer Quality: 20 pts (-8 per missed question)
+• Conciseness: 15 pts (-4 per circular repetition)
+• Communication Clarity: 10 pts" data-shape="rectangle">
+  <rect x="425.428738095238" y="2104.3590000000004" width="440.6079999999997" height="121.4" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="645.7327380952379" y="2165.059" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="645.7327380952379" dy="-37.70000000000001">100-Point Framework Breakdown:</tspan><tspan x="645.7327380952379" dy="16.900000000000002">• Factual Accuracy: 30 pts (-10 per contradiction, -5 per unsupported)</tspan><tspan x="645.7327380952379" dy="16.900000000000002">• Product Relevance: 25 pts (-6 per off-topic story)</tspan><tspan x="645.7327380952379" dy="16.900000000000002">• Answer Quality: 20 pts (-8 per missed question)</tspan><tspan x="645.7327380952379" dy="16.900000000000002">• Conciseness: 15 pts (-4 per circular repetition)</tspan><tspan x="645.7327380952379" dy="16.900000000000002">• Communication Clarity: 10 pts</tspan></text>
+</g>
+<g class="node" data-id="CoachGen" data-label="Coaching Report &amp; Rewriter
+(services/coach_generator.py)" data-shape="rectangle">
+  <rect x="225.73649999999998" y="2345.759" width="227.94099999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="339.70699999999994" y="2372.659" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="339.70699999999994" dy="-3.9000000000000012">Coaching Report &amp; Rewriter</tspan><tspan x="339.70699999999994" dy="16.900000000000002">(services/coach_generator.py)</tspan></text>
+</g>
+<g class="node" data-id="Rewrite" data-label="Grounded Replacement Answers
+(Target: English, Hindi, or Hinglish)" data-shape="rectangle">
+  <rect x="508.72399999999993" y="2447.559" width="242.01999999999992" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="629.7339999999999" y="2474.4590000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="629.7339999999999" dy="-3.9000000000000012">Grounded Replacement Answers</tspan><tspan x="629.7339999999999" dy="16.900000000000002">(Target: English, Hindi, or Hinglish)</tspan></text>
+</g>
+<g class="node" data-id="Report" data-label="Private Coaching Report
+(Summary, Pros, Deductions, Action Plan)" data-shape="rectangle">
+  <rect x="198.69000000000005" y="2447.559" width="282.0339999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="339.707" y="2474.4590000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="339.707" dy="-3.9000000000000012">Private Coaching Report</tspan><tspan x="339.707" dy="16.900000000000002">(Summary, Pros, Deductions, Action Plan)</tspan></text>
+</g>
+<g class="node" data-id="TTS" data-label="Voice Feedback Synthesis
+(pyttsx3 Audio Generation)" data-shape="rectangle">
+  <rect x="585.1029999999998" y="2549.359" width="200.52399999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="685.3649999999998" y="2576.259" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="685.3649999999998" dy="-3.9000000000000012">Voice Feedback Synthesis</tspan><tspan x="685.3649999999998" dy="16.900000000000002">(pyttsx3 Audio Generation)</tspan></text>
+</g>
+<g class="node" data-id="UI1" data-label="📊 Streamlit Web Dashboard
+(http://localhost:8501)" data-shape="rectangle">
+  <rect x="541.9469999999999" y="2723.159" width="206.452" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="645.1729999999999" y="2750.059" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="645.1729999999999" dy="-3.9000000000000012">📊 Streamlit Web Dashboard</tspan><tspan x="645.1729999999999" dy="16.900000000000002">(http://localhost:8501)</tspan></text>
+</g>
+<g class="node" data-id="API" data-label="⚡ FastAPI REST Server
+(http://localhost:8000)" data-shape="rectangle">
+  <rect x="324.5379999999999" y="2723.159" width="189.40899999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="419.2424999999999" y="2750.059" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="419.2424999999999" dy="-3.9000000000000012">⚡ FastAPI REST Server</tspan><tspan x="419.2424999999999" dy="16.900000000000002">(http://localhost:8000)</tspan></text>
+</g>
+<g class="node" data-id="Docx" data-label="📄 Word Talk-Track Script (.docx)
+(generated_docs/)" data-shape="rectangle">
+  <rect x="56" y="2723.159" width="240.53799999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="176.26899999999998" y="2750.059" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="176.26899999999998" dy="-3.9000000000000012">📄 Word Talk-Track Script (.docx)</tspan><tspan x="176.26899999999998" dy="16.900000000000002">(generated_docs/)</tspan></text>
+</g>
+</svg>

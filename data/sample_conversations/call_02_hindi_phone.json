@@ -1,0 +1,46 @@
+{
+  "call_id": "call-hindi-002",
+  "product_id": "apex-phone-15",
+  "provider_name": "Priya Verma",
+  "customer_name": "Suresh Gupta",
+  "duration_seconds": 80.0,
+  "disclosure_confirmed": true,
+  "segments": [
+    {
+      "speaker_role": "customer",
+      "start_time": 0.0,
+      "end_time": 5.0,
+      "text": "नमस्ते, क्या एपेक्स 15 प्रो में वायरलेस चार्जिंग का सपोर्ट मिलता है?"
+    },
+    {
+      "speaker_role": "provider",
+      "start_time": 5.5,
+      "end_time": 14.0,
+      "text": "नमस्ते सर। एपेक्स 15 प्रो में वायरलेस चार्जिंग नहीं है, लेकिन इसमें 67W का फास्ट चार्जर बॉक्स में ही मिलता है।"
+    },
+    {
+      "speaker_role": "customer",
+      "start_time": 15.0,
+      "end_time": 20.0,
+      "text": "अच्छा, और इसका मुख्य कैमरा कितने मेगापिक्सल का है?"
+    },
+    {
+      "speaker_role": "provider",
+      "start_time": 21.0,
+      "end_time": 29.0,
+      "text": "सर, इसका मुख्य कैमरा 50MP Sony IMX890 सेंसर है जिसमें OIS सपोर्ट भी दिया गया है।"
+    },
+    {
+      "speaker_role": "customer",
+      "start_time": 30.0,
+      "end_time": 35.0,
+      "text": "धन्यवाद, इसकी अंतिम कीमत कितनी है?"
+    },
+    {
+      "speaker_role": "provider",
+      "start_time": 36.0,
+      "end_time": 42.0,
+      "text": "सर इसका एमआरपी 54,999 है, और बैंक डिस्काउंट के बाद यह 49,999 में उपलब्ध है।"
+    }
+  ]
+}
