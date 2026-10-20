@@ -1,8 +1,8 @@
 services:
-  # 1. ProductGuard AI - Streamlit Interactive Dashboard
+  # ProductGuard AI - Interactive Auditor & Compliance Platform
   - type: web
-    name: productguard-ai-dashboard
-    env: python
+    name: productguard-ai
+    runtime: python
     region: oregon
     plan: free
     buildCommand: pip install -r requirements.txt
@@ -10,19 +10,3 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.12.8
-      - key: PORT
-        value: 10000
-
-  # 2. ProductGuard AI - FastAPI Backend (Optional / Secondary Web Service)
-  - type: web
-    name: productguard-ai-api
-    env: python
-    region: oregon
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: python run.py api
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.12.8
-      - key: PORT
-        value: 10000
