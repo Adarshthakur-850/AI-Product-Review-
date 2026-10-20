@@ -6,6 +6,8 @@ ProductGuard AI helps evaluate sales and customer-service conversations against 
 
 It is designed for conversations in **English**, **Hindi (Devanagari)**, and **Hinglish** (Romanized Hindi and code-switched language).
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Adarshthakur-850/AI-Product-Review-)
+
 [Repository](https://github.com/Adarshthakur-850/AI-Product-Review-) · [FastAPI docs](http://localhost:8000/docs) · [Streamlit dashboard](http://localhost:8501)
 
 ## Contents
