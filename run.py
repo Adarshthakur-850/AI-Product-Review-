@@ -3,6 +3,7 @@ ProductGuard AI - Unified CLI Runner.
 Launch FastAPI backend or Streamlit Auditor Dashboard with a single command.
 """
 import sys
+import os
 import argparse
 import subprocess
 from pathlib import Path
@@ -20,14 +21,27 @@ def main():
 
     python_exe = sys.executable
 
+    # Dynamic port configuration (essential for Render / Cloud hosting)
+    default_port = 8501 if args.service == "dashboard" else 8000
+    port = int(os.environ.get("PORT", default_port))
+
     if args.service == "dashboard":
-        print("Starting ProductGuard AI Streamlit Auditor Dashboard on http://localhost:8501 ...")
-        cmd = [python_exe, "-m", "streamlit", "run", "dashboard/app.py", "--server.port=8501", "--server.headless=true"]
+        print(f"Starting ProductGuard AI Streamlit Auditor Dashboard on port {port} ...")
+        cmd = [
+            python_exe, "-m", "streamlit", "run", "dashboard/app.py",
+            f"--server.port={port}",
+            "--server.address=0.0.0.0",
+            "--server.headless=true"
+        ]
         subprocess.run(cmd)
 
     elif args.service == "api":
-        print("Starting ProductGuard AI FastAPI backend on http://localhost:8000 (Docs at /docs) ...")
-        cmd = [python_exe, "-m", "uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+        print(f"Starting ProductGuard AI FastAPI backend on port {port} (Docs at /docs) ...")
+        cmd = [
+            python_exe, "-m", "uvicorn", "api.main:app",
+            "--host", "0.0.0.0",
+            "--port", str(port)
+        ]
         subprocess.run(cmd)
 
     elif args.service == "test":
